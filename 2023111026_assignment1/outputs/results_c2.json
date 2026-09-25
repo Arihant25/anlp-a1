@@ -1,0 +1,48 @@
+{
+  "config": {
+    "name": "C2-rope",
+    "change": "positional encoding",
+    "pos": "rope",
+    "attn": "mha",
+    "norm": "layernorm",
+    "tok": "subword"
+  },
+  "hyperparameters": {
+    "d_model": 256,
+    "n_heads": 8,
+    "enc_layers": 4,
+    "dec_layers": 4,
+    "ffn_dim": 1024,
+    "dropout": 0.1,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_steps": 1000,
+    "label_smoothing": 0.1,
+    "grad_clip": 1.0,
+    "max_epochs": 200,
+    "patience": 10,
+    "token_budget": 8192,
+    "max_batch_size": 64,
+    "bpe_vocab_size": 8000,
+    "src_bpe_vocab_size": 1024,
+    "seed": 42
+  },
+  "benchmark": {
+    "epoch_seconds": 17.83428512985383,
+    "samples_per_sec": 643.8721774599168,
+    "tokens_per_sec": 30676.530963620633,
+    "peak_mem_gb": 2.996627968,
+    "n_params": 9683968,
+    "best_val_loss": 0.49743798089747854
+  },
+  "test_metrics": {
+    "bit_accuracy": 0.780432044432307,
+    "sequence_accuracy": 0.046,
+    "levenshtein_mean": 19.304,
+    "bleu": 84.30530468527152,
+    "rouge1": 0.9200144620552745,
+    "rouge2": 0.8591604718550394,
+    "rougeL": 0.9197937867474002,
+    "greedy_decode_seconds": 13.116688013076782
+  }
+}

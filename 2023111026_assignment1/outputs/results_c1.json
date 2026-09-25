@@ -1,0 +1,48 @@
+{
+  "config": {
+    "name": "C1-base",
+    "change": "none (base)",
+    "pos": "sinusoidal",
+    "attn": "mha",
+    "norm": "layernorm",
+    "tok": "subword"
+  },
+  "hyperparameters": {
+    "d_model": 256,
+    "n_heads": 8,
+    "enc_layers": 4,
+    "dec_layers": 4,
+    "ffn_dim": 1024,
+    "dropout": 0.1,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_steps": 1000,
+    "label_smoothing": 0.1,
+    "grad_clip": 1.0,
+    "max_epochs": 200,
+    "patience": 10,
+    "token_budget": 8192,
+    "max_batch_size": 64,
+    "bpe_vocab_size": 8000,
+    "src_bpe_vocab_size": 1024,
+    "seed": 42
+  },
+  "benchmark": {
+    "epoch_seconds": 17.248619629510085,
+    "samples_per_sec": 665.7344324733164,
+    "tokens_per_sec": 31718.132334717106,
+    "peak_mem_gb": 2.997727744,
+    "n_params": 9683968,
+    "best_val_loss": 1.2384042605648595
+  },
+  "test_metrics": {
+    "bit_accuracy": 0.7120349979688052,
+    "sequence_accuracy": 0.004,
+    "levenshtein_mean": 75.906,
+    "bleu": 61.73748256060435,
+    "rouge1": 0.7859054448097205,
+    "rouge2": 0.6520646287317181,
+    "rougeL": 0.7846573542580962,
+    "greedy_decode_seconds": 12.526448488235474
+  }
+}

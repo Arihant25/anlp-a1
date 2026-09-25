@@ -1,0 +1,9 @@
+.venv/
+.env
+.claude/
+__pycache__/
+*.pyc
+wandb/
+**/checkpoints/
+*.pt
+datasets/*.txt

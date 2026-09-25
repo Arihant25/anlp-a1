@@ -1,0 +1,14 @@
+[project]
+name = "anlp-a1"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub>=1.27.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "rouge-score>=0.1.2",
+    "sacrebleu>=2.6.0",
+    "tokenizers>=0.23.1",
+    "torch>=2.13.0",
+    "wandb>=0.28.2",
+]

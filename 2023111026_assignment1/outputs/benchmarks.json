@@ -1,0 +1,42 @@
+{
+  "C1-base": {
+    "epoch_seconds": 17.248619629510085,
+    "samples_per_sec": 665.7344324733164,
+    "tokens_per_sec": 31718.132334717106,
+    "peak_mem_gb": 2.997727744,
+    "n_params": 9683968,
+    "best_val_loss": 1.2384042605648595
+  },
+  "C2-rope": {
+    "epoch_seconds": 17.83428512985383,
+    "samples_per_sec": 643.8721774599168,
+    "tokens_per_sec": 30676.530963620633,
+    "peak_mem_gb": 2.996627968,
+    "n_params": 9683968,
+    "best_val_loss": 0.49743798089747854
+  },
+  "C3-gqa": {
+    "epoch_seconds": 16.96561375199532,
+    "samples_per_sec": 676.8396456420262,
+    "tokens_per_sec": 32247.22712643723,
+    "peak_mem_gb": 2.986893824,
+    "n_params": 8894464,
+    "best_val_loss": 1.2812248907424357
+  },
+  "C4-rmsnorm": {
+    "epoch_seconds": 16.78766166504903,
+    "samples_per_sec": 684.0142617305042,
+    "tokens_per_sec": 32589.05325326034,
+    "peak_mem_gb": 2.852627456,
+    "n_params": 9678336,
+    "best_val_loss": 1.2710725725446903
+  },
+  "C5-blt": {
+    "epoch_seconds": 65.87125369136253,
+    "samples_per_sec": 174.32490436273153,
+    "tokens_per_sec": 36814.328923543515,
+    "peak_mem_gb": 4.919660032,
+    "n_params": 12249344,
+    "best_val_loss": 0.08828962507154314
+  }
+}

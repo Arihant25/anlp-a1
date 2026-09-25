@@ -1,0 +1,48 @@
+{
+  "config": {
+    "name": "C4-rmsnorm",
+    "change": "normalization",
+    "pos": "sinusoidal",
+    "attn": "mha",
+    "norm": "rmsnorm",
+    "tok": "subword"
+  },
+  "hyperparameters": {
+    "d_model": 256,
+    "n_heads": 8,
+    "enc_layers": 4,
+    "dec_layers": 4,
+    "ffn_dim": 1024,
+    "dropout": 0.1,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_steps": 1000,
+    "label_smoothing": 0.1,
+    "grad_clip": 1.0,
+    "max_epochs": 200,
+    "patience": 10,
+    "token_budget": 8192,
+    "max_batch_size": 64,
+    "bpe_vocab_size": 8000,
+    "src_bpe_vocab_size": 1024,
+    "seed": 42
+  },
+  "benchmark": {
+    "epoch_seconds": 16.78766166504903,
+    "samples_per_sec": 684.0142617305042,
+    "tokens_per_sec": 32589.05325326034,
+    "peak_mem_gb": 2.852627456,
+    "n_params": 9678336,
+    "best_val_loss": 1.2710725725446903
+  },
+  "test_metrics": {
+    "bit_accuracy": 0.7074028933684102,
+    "sequence_accuracy": 0.0,
+    "levenshtein_mean": 80.446,
+    "bleu": 60.303324169934015,
+    "rouge1": 0.7785811362137525,
+    "rouge2": 0.6420647017198982,
+    "rougeL": 0.7771755501913481,
+    "greedy_decode_seconds": 16.40428876876831
+  }
+}

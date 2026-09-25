@@ -1,0 +1,51 @@
+{
+  "config": {
+    "name": "C5-blt",
+    "change": "tokenization",
+    "pos": "sinusoidal",
+    "attn": "mha",
+    "norm": "layernorm",
+    "tok": "blt",
+    "local_layers": 2,
+    "local_window": 128,
+    "patch_tgt": 4
+  },
+  "hyperparameters": {
+    "d_model": 256,
+    "n_heads": 8,
+    "enc_layers": 4,
+    "dec_layers": 4,
+    "ffn_dim": 1024,
+    "dropout": 0.1,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_steps": 1000,
+    "label_smoothing": 0.1,
+    "grad_clip": 1.0,
+    "max_epochs": 200,
+    "patience": 10,
+    "token_budget": 8192,
+    "max_batch_size": 64,
+    "bpe_vocab_size": 8000,
+    "src_bpe_vocab_size": 1024,
+    "entropy_order": 2,
+    "entropy_min_count": 4,
+    "entropy_percentile": 75,
+    "max_patch": 12,
+    "seed": 42
+  },
+  "benchmark": {
+    "epoch_seconds": 65.87125369136253,
+    "samples_per_sec": 174.32490436273153,
+    "tokens_per_sec": 36814.328923543515,
+    "peak_mem_gb": 4.919660032,
+    "n_params": 12249344,
+    "best_val_loss": 0.08828962507154314
+  },
+  "test_metrics": {
+    "bit_accuracy": 0.9670058426292053,
+    "sequence_accuracy": 0.364,
+    "levenshtein_mean": 5.308,
+    "greedy_decode_seconds": 187.41747498512268
+  }
+}
